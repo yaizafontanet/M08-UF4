@@ -10,7 +10,6 @@ mkdir -p /data/streama /data/streama/files
 cd /data/streama
 sudo wget https://github.com/streamaserver/streama/releases/download/v1.9.1/streama-1.9.1.jar
 chmod +x ./streama-1.9.1.jar
-./streama-1.9.1.jar
 
 #Anem al directori on volem treballar
 cd /data/streama
