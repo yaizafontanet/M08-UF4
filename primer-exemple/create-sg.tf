@@ -116,6 +116,18 @@ resource "aws_security_group" "sg" {
     security_groups  = []
     self             = false
   }
+,
+  {
+    description      = "http"
+    protocol         = "tcp"
+    from_port        = 8080
+    to_port          = 8080
+    cidr_blocks      = [var.sg_egress_cidr_block]
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    security_groups  = []
+    self             = false
+  }
  ]
  
   egress = [{
